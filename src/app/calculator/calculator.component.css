@@ -1,0 +1,37 @@
+.calculator__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.calculator__form label {
+    margin: .8rem 0;
+}
+
+.calculator__input {
+    background-color: white;
+    border: 1px solid rgb(192, 191, 191);
+    font-size: 16px;
+    padding: .5rem;
+    width: 300px;
+}
+
+.calculator__input:focus {
+    outline: none;
+}
+
+.calculator__button {
+    color: white;
+    border: 0;
+    background-color: darkslategrey;
+    font-size: 16px;
+    padding: .8rem;
+    margin-top: 1.5rem;
+    width: 318px;
+}
+
+.calculator__button:hover {
+    cursor: pointer;
+    background-color: rgb(20, 36, 36);
+    transition: 1s;
+}
