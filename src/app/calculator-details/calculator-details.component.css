@@ -1,5 +1,12 @@
+.imc__card {
+    background-color: white;
+    padding: 2rem;
+}
+
 .imc__title {
     color: rgb(39, 39, 39);
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .imc__text {

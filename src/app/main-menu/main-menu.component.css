@@ -1,16 +1,27 @@
 .menu__navbar ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
     list-style: none;
+    padding-inline-start: unset;
+}
+
+.menu__icon {
+    height: 50px;
+    padding: 0 .5rem;
+}
+
+.menu__navbar li {
+    padding: 1.2rem;
 }
 
 .menu__link {
     color: white;
-    padding: 1.5rem;
+    padding-bottom: .3rem;
 }
 
 .menu__link:hover {
     cursor: pointer;
-    background-color: rgb(179, 9, 9);
+    border-bottom: 1px solid white;
     transition: 1s;
 }

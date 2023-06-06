@@ -1,3 +1,9 @@
+.calculator__card {
+    background-color: white;
+    border-radius: 3px;
+    padding: 4rem;
+}
+
 .calculator__form {
     display: flex;
     flex-direction: column;
@@ -5,7 +11,7 @@
 }
 
 .calculator__form label {
-    margin: .8rem 0;
+    margin: .7rem 0;
 }
 
 .calculator__input {
