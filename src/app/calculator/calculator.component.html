@@ -1,4 +1,6 @@
 <div class="calculator__card">
+    <h3 class="calculator__title">Calculadora de IMC</h3>
+
     <form class="calculator__form">
         <label for="altura">Altura (cm)</label>
         <input type="text" class="calculator__input" name="altura">
@@ -6,6 +8,11 @@
         <label for="peso">Peso (kg)</label>
         <input type="text" class="calculator__input" name="peso">
 
-        <button type="submit" class="calculator__button">Calcular</button>
+        <button type="submit" class="calculator__button" (click)="calculateImc()">Calcular</button>
     </form>
+</div>
+
+<div class="calculator__info">
+    <div class="calculator__result"></div>
+    <div class="calculator__message"></div>
 </div>

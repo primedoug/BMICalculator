@@ -4,6 +4,11 @@
     padding: 4rem;
 }
 
+.calculator__title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
 .calculator__form {
     display: flex;
     flex-direction: column;
@@ -40,4 +45,9 @@
     cursor: pointer;
     background-color: rgb(20, 36, 36);
     transition: 1s;
+}
+
+.calculator__info {
+    background-color: white;
+    margin-top: 1rem;
 }
