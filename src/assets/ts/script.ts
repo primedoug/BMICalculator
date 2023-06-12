@@ -10,19 +10,12 @@ function CalculateIMC() {
 }
   
 function getIMCMessage(imc: number): string {
-    if (imc < 18.5) {
-        return "<p class='calculator__message-text'>Você está abaixo do peso.</p>";
-    } else if (imc < 25) {
-        return "<p class='calculator__message-text'>Você está no peso ideal.</p>";
-    } else if (imc < 30) {
-        return "<p class='calculator__message-text'>Você está com sobrepeso.</p>";
-    } else if (imc < 35) {
-        return "<p class='calculator__message-text'>Você está com obesidade grau 1.</p>";
-    } else if (imc < 40) {
-        return "<p class='calculator__message-text'>Você está com obesidade grau 2.</p>";
-    } else {
-        return "<p class='calculator__message-text'>Você está com obesidade grau 3.</p>";
-    }
+    if (imc < 18.5) return "<p class='calculator__message-text'>Você está abaixo do peso.</p>";
+    else if (imc < 25) return "<p class='calculator__message-text'>Você está no peso ideal.</p>";
+    else if (imc < 30) return "<p class='calculator__message-text'>Você está com sobrepeso.</p>";
+    else if (imc < 35) return "<p class='calculator__message-text'>Você está com obesidade grau 1.</p>";
+    else if (imc < 40) return "<p class='calculator__message-text'>Você está com obesidade grau 2.</p>";
+    else return "<p class='calculator__message-text'>Você está com obesidade grau 3.</p>";
 }
 
 function setMessagesStyles(imc: number) {
@@ -41,6 +34,11 @@ function setMessagesStyles(imc: number) {
     mensagemTexto.style.marginTop = '.8rem';
     mensagemTexto.style.fontSize = '16px';
     mensagemTexto.style.fontWeight = 'bold';
+
+    if (screen.width < 768) {
+        const secaoBlocos = document.getElementsByClassName('section__block')[0] as HTMLElement;
+        secaoBlocos.style.paddingBottom = '20rem';
+    }
 }
   
 export { CalculateIMC };
