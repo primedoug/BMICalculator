@@ -1,37 +1,23 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<section class="section__menu">
+  <div class="container">
+    <app-main-menu></app-main-menu>
+  </div>
+</section>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-  </head>
+<section class="section__block">
+  <div class="container">
+    <div class="section__calculator">
+      <app-calculator></app-calculator>
+    </div>
 
-  <body>
-    <section class="section__menu">
-      <div class="container">
-        <app-main-menu></app-main-menu>
-      </div>
-    </section>
+    <div class="section__calculator-details">
+      <app-calculator-details></app-calculator-details>
+    </div>
+  </div>
+</section>
 
-    <section class="section__block">
-      <div class="container">
-        <div class="section__calculator">
-          <app-calculator></app-calculator>
-        </div>
-  
-        <div class="section__calculator-details">
-          <app-calculator-details></app-calculator-details>
-        </div>
-      </div>
-    </section>
-
-    <section class="section__footer">
-      <div class="container">
-        <app-footer></app-footer>
-      </div>
-    </section>
-  </body>
-
-</html>
+<section class="section__footer">
+  <div class="container">
+    <app-footer></app-footer>
+  </div>
+</section>

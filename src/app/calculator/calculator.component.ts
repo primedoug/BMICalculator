@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CalculateIMC } from '../../assets/ts/script';
+import { CalculateIMC } from '../../ts/script';
 
 @Component({
   selector: 'app-calculator',
