@@ -8,6 +8,6 @@ import { CalculateIMC } from '../../ts/script';
 })
 export class CalculatorComponent {
   calculateImc() {
-    CalculateIMC();
+    CalculateIMC()();
   }
 }

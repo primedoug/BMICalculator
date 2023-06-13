@@ -18,6 +18,7 @@
 .menu__link {
     color: white;
     padding-bottom: .3rem;
+    text-decoration: none;
 }
 
 .menu__link:hover {
