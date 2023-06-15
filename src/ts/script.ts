@@ -36,5 +36,5 @@ function setMessagesStyles(imc: number) {
     mensagemTexto.style.fontSize = '16px';
     mensagemTexto.style.fontWeight = 'bold';
 }
-  
+
 export { CalculateIMC };
